@@ -1,23 +1,40 @@
 info it worked if it ends with ok
-verbose cli [ 'node', '/usr/local/bin/npm', 'run' ]
+verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
 info using npm@1.1.21
 info using node@v0.6.17
 verbose config file /Users/lisawedeen/.npmrc
 verbose config file /usr/local/etc/npmrc
 verbose config file /usr/local/lib/node_modules/npm/npmrc
-ERR! Error: ENOENT, open '/Users/lisawedeen/Desktop/programming/hackyale_intro/node_modules/package.json'
-ERR! You may report this log at:
-ERR!     <http://github.com/isaacs/npm/issues>
-ERR! or email it to:
-ERR!     <npm-@googlegroups.com>
+verbose caching /Users/lisawedeen/Desktop/programming/hackyale_intro/package.json
+verbose loadDefaults HackYaleWelcome@0.0.1-1
+verbose run-script [ 'prestart', 'start', 'poststart' ]
+info prestart HackYaleWelcome@0.0.1-1
+info start HackYaleWelcome@0.0.1-1
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "server.js"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'server.js' ],
+silly spawning   '/Users/lisawedeen/Desktop/programming/hackyale_intro' ]
+info HackYaleWelcome@0.0.1-1 Failed to exec start script
+ERR! HackYaleWelcome@0.0.1-1 start: `server.js`
+ERR! `sh "-c" "server.js"` failed with 127
+ERR! 
+ERR! Failed at the HackYaleWelcome@0.0.1-1 start script.
+ERR! This is most likely a problem with the HackYaleWelcome package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     server.js
+ERR! You can get their info via:
+ERR!     npm owner ls HackYaleWelcome
+ERR! There is likely additional logging output above.
 ERR! 
 ERR! System Darwin 10.7.0
-ERR! command "node" "/usr/local/bin/npm" "run"
+ERR! command "node" "/usr/local/bin/npm" "start"
 ERR! cwd /Users/lisawedeen/Desktop/programming/hackyale_intro
 ERR! node -v v0.6.17
 ERR! npm -v 1.1.21
-ERR! path /Users/lisawedeen/Desktop/programming/hackyale_intro/node_modules/package.json
-ERR! code ENOENT
-ERR! message ENOENT, open '/Users/lisawedeen/Desktop/programming/hackyale_intro/node_modules/package.json'
+ERR! code ELIFECYCLE
+ERR! message HackYaleWelcome@0.0.1-1 start: `server.js`
+ERR! message `sh "-c" "server.js"` failed with 127
 ERR! errno {}
 verbose exit [ 1, true ]
