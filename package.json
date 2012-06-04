@@ -1,21 +1,22 @@
 {
   "name": "HackYaleWelcome",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "private": true,
   "dependencies": {
     "express": "2.5.5",
     "jade": ">= 0.0.1"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "server.js"
   },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": "v0.6.x"
   },
   "author": "Zack Reneau-Wedeen <zack@hackyale.com>",
   "description": "Welcome to HackYale!",
   "homepage": "hackyale.jit.su",
-  "main": "server.js"
+  "main": "server.js",
+  "subdomain": "hackyale"
 }
